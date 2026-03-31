@@ -83,7 +83,7 @@ def get_kol_followers(twitter_username: str) -> Optional[int]:
         response = requests.get(url, headers=headers, timeout=10)
         if response.status_code == 200:
             data = response.json()
-            return data.get('count') or data.get('data', {}).get('count')
+            return data.get('data', {}).get('totalCount')
         else:
             print(f"  [!] API 错误: {response.status_code}")
             return None
