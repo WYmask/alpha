@@ -1,5 +1,5 @@
 import { type Page } from 'playwright';
-import { getKOLFollowers } from '../../utils/frontrun';
+import { getKOLFollowers } from './frontrun';
 
 interface ProjectInfo {
   name: string;
