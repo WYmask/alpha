@@ -1,0 +1,38 @@
+{
+  "name": "alpharadar",
+  "version": "1.0.0",
+  "description": "AlphaRadar Twitter data scraper",
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node src/index.ts run-task collect",
+    "clean": "rimraf dist",
+    "postinstall": "playwright install chromium && npm run build && npm run unzip",
+    "prod": "NODE_NO_WARNINGS=1 node dist/index.js run-task collect",
+    "prod:claude": "npm run prod 2>/dev/null | claude -p '你将收到从 alpharadar.io/twitter 采集的 JSON 数据，其中 htmlContent 是页面 HTML。请：1) 解析 HTML 中的项目数据（关注数、互动量、热门话题等）；2) 给出关键指标总结；3) 输出 report.md 和 report.json 两个文件'",
+    "zip": "NODE_NO_WARNINGS=1 node dist/task/zip.js",
+    "unzip": "NODE_NO_WARNINGS=1 node dist/task/unzip.js"
+  },
+  "keywords": [
+    "alpharadar",
+    "playwright"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "adm-zip": "^0.5.16",
+    "commander": "^14.0.0",
+    "cross-spawn": "^7.0.6",
+    "playwright": "^1.40.0"
+  },
+  "devDependencies": {
+    "@types/adm-zip": "^0.5.7",
+    "@types/cross-spawn": "^6.0.6",
+    "@types/node": "^20.10.5",
+    "rimraf": "^5.0.5",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.0.0",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
