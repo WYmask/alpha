@@ -1,2 +1,3 @@
-2026/03/30-23:12:11.168 f91324 Creating DB /Users/oker/Library/Application Support/Google/Chrome/Profile 4/IndexedDB/https_alpharadar.io_0.indexeddb.leveldb since it was missing.
-2026/03/30-23:12:11.169 f91324 Reusing MANIFEST /Users/oker/Library/Application Support/Google/Chrome/Profile 4/IndexedDB/https_alpharadar.io_0.indexeddb.leveldb/MANIFEST-000001
+2026/04/03-15:13:47.227 19bdbd Reusing MANIFEST /Users/wymask/.openclaw/workspace/skills/alpharesearch/extension/Chrome/mcohilncbfahbmgdjkbpemcciiolgcge/Default/IndexedDB/https_alpharadar.io_0.indexeddb.leveldb/MANIFEST-000001
+2026/04/03-15:13:47.227 19bdbd Recovering log #3
+2026/04/03-15:13:47.227 19bdbd Reusing old log /Users/wymask/.openclaw/workspace/skills/alpharesearch/extension/Chrome/mcohilncbfahbmgdjkbpemcciiolgcge/Default/IndexedDB/https_alpharadar.io_0.indexeddb.leveldb/000003.log 
